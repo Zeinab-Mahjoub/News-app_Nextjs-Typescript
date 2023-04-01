@@ -13,9 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
         <Header />
-        {children}
+        <div className="max-w-6xl mx-auto">{children}</div>
       </body>
     </html>
   );
