@@ -1,7 +1,7 @@
 "use client";
 
 import { categories } from "@/constants";
-import Articles from "./components/Articles"
+import Articles from "./components/Articles";
 import {
   ApolloClient,
   InMemoryCache,
@@ -16,7 +16,7 @@ function Homepage() {
   });
   return (
     <ApolloProvider client={client}>
-      <Articles/>
+      <Articles />
     </ApolloProvider>
   );
 }
