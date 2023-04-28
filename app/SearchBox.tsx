@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 function SearchBox() {
   const [input, setInput] = useState("");
-  const router = useRouter;
+  const router = useRouter();
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input) return;
