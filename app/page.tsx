@@ -1,13 +1,12 @@
 "use client";
 
-import { categories } from "@/constants";
-import Articles from "./components/Articles";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   gql,
 } from "@apollo/client";
+import MainPageContainer from "./components/MainPageContainer";
 
 function Homepage() {
   const client = new ApolloClient({
@@ -16,7 +15,7 @@ function Homepage() {
   });
   return (
     <ApolloProvider client={client}>
-      <Articles />
+      <MainPageContainer />
     </ApolloProvider>
   );
 }

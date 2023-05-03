@@ -7,7 +7,6 @@ function SearchBox() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input) return;
-    // ignore the error below, as it is used like this in the doc itself.
     router.push(`/search?term=${input}`);
   };
   return (
