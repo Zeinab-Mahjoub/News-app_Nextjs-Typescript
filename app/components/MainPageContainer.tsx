@@ -1,6 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import Articles from "./Articles";
-import fakeArticles from "../response.json";
+// import fakeArticles from "../response.json";
 
 function MainPageContainer() {
   const ARTICLES_QUERY = gql`
@@ -43,8 +43,8 @@ function MainPageContainer() {
 
   return (
     <div>
-      {/* <Articles news={articles} /> */}
-      <Articles news={fakeArticles} />
+      <Articles news={articles} />
+      {/* <Articles news={fakeArticles} /> */}
     </div>
   );
 }
